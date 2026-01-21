@@ -60,7 +60,7 @@ describe('context and cache', () => {
               href: '/about'
             }
           ],
-          serviceName: 'ai-service-manual',
+          serviceName: 'Defra AI Capabilities & Enablement Service Manual',
           serviceUrl: '/'
         })
       })
@@ -149,7 +149,7 @@ describe('context and cache', () => {
               href: '/about'
             }
           ],
-          serviceName: 'ai-service-manual',
+          serviceName: 'Defra AI Capabilities & Enablement Service Manual',
           serviceUrl: '/'
         })
       })

@@ -1,17 +1,86 @@
 {% extends 'layouts/page.njk' %}
 
 {% block content %}
-  {{ appHeading({
-    text: heading,
-    caption: "ai-service-manual"
-  }) }}
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <div class="govuk-body" data-testid="app-page-body">
-        <p></p>
+  <section class="app-hero-section govuk-!-padding-top-9 govuk-!-padding-bottom-7">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+          <h1 class="govuk-heading-xl govuk-!-font-size-64 govuk-!-margin-top-5 app-hero-title">
+            AI Capabilities &amp; Enablement
+          </h1>
+          <p class="govuk-body-l">
+            Supporting Defra teams to use AI safely and effectively. Find guidance, patterns, tools
+            and the latest developments from across the department.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section class="govuk-!-margin-bottom-0">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div class="dfe-grid-container">
+            {% for card in cards %}
+              <a href="{{ card.href }}" class="dfe-card">
+                <div class="dfe-card-container">
+                  <h3 class="govuk-heading-m">
+                    <span class="govuk-link govuk-link--no-visited-state dfe-card-link--header">{{ card.title }}</span>
+                  </h3>
+                  <p class="govuk-body">{{ card.description }}</p>
+                </div>
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% if blogPosts.length > 0 %}
+    <section class="govuk-!-margin-top-7 govuk-!-padding-top-7 app-section-divider">
+      <div class="govuk-width-container">
+        <h2 class="govuk-heading-l govuk-!-margin-bottom-0">Latest blog posts</h2>
+        <div class="govuk-grid-row">
+          {% for post in blogPosts %}
+            <div class="govuk-grid-column-one-third govuk-!-margin-top-6">
+              {% if post.image %}
+                <div class="app-blog-image">
+                  <img src="{{ post.image }}" alt="{{ post.imageAlt }}" loading="lazy">
+                </div>
+              {% endif %}
+              <p class="govuk-body-s govuk-!-margin-top-3 govuk-!-margin-bottom-0 app-blog-date">
+                {{ post.date }}
+              </p>
+              <h3 class="govuk-heading-s govuk-!-padding-top-1">
+                <a class="govuk-link" href="{{ post.href }}">{{ post.title }}</a>
+              </h3>
+              <p class="govuk-body govuk-!-margin-bottom-1">{{ post.description }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
+
+  {% if whatWeDo.length > 0 %}
+    <section class="govuk-!-margin-top-7 govuk-!-padding-top-7 app-section-divider">
+      <div class="govuk-width-container">
+        <h2 class="govuk-heading-l govuk-!-margin-bottom-0">What we do</h2>
+        <div class="govuk-grid-row">
+          {% for item in whatWeDo %}
+            <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6">
+              {% if item.image %}
+                <img src="{{ item.image }}" alt="{{ item.imageAlt }}" loading="lazy" class="govuk-!-width-full">
+              {% endif %}
+              <h3 class="govuk-heading-m govuk-!-margin-top-3">{{ item.title }}</h3>
+              <p class="govuk-body">{{ item.description }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
 
 {% endblock %}
