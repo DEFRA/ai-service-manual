@@ -23,7 +23,9 @@ describe('#errors', () => {
     })
 
     expect(result).toEqual(
-      expect.stringContaining('Page not found | ai-service-manual')
+      expect.stringContaining(
+        'Page not found | Defra AI Capabilities &amp; Enablement Service Manual'
+      )
     )
     expect(statusCode).toBe(statusCodes.notFound)
   })
