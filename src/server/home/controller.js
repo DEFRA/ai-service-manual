@@ -72,8 +72,8 @@ export const homeController = {
           description:
             'AI has transitioned from experimental stage to operational necessity. Learn how to avoid common pitfalls when scaling AI delivery infrastructure across your organization.',
           date: 'January 9, 2026',
-          href: '#',
-          image: null,
+          href: 'https://www.linkedin.com/pulse/you-cant-rip-replace-your-way-better-data-steven-dickinson-4xoie/',
+          image: '/public/blog-ai-factory-trap.jpg',
           imageAlt: 'AI Factory Trap blog post cover'
         },
         {
@@ -82,8 +82,8 @@ export const homeController = {
           description:
             'Testing whether specialized AI agents can handle complex workflows better than monolithic language models using government content publishing as a test case.',
           date: 'December 28, 2025',
-          href: '#',
-          image: null,
+          href: 'https://www.linkedin.com/pulse/automating-routine-how-multi-agent-ai-could-empower-dickinson-gzcpe/',
+          image: '/public/blog-multi-agent.jpg',
           imageAlt: 'Multi-agent AI blog post cover'
         },
         {
@@ -92,8 +92,8 @@ export const homeController = {
           description:
             'An unplanned holiday experiment building an AI agent connected to UK Environment Agency open data reveals how agents investigate rather than follow rules.',
           date: 'November 22, 2025',
-          href: '#',
-          image: null,
+          href: 'https://www.linkedin.com/pulse/i-didnt-plan-build-ai-agent-my-holiday-taught-me-steven-dickinson-chkre/',
+          image: '/public/blog-holiday-agent.jpg',
           imageAlt: 'Holiday AI agent blog post cover'
         }
       ],
@@ -102,28 +102,28 @@ export const homeController = {
           title: 'Supporting',
           description:
             'We help Defra teams get started with AI safely and effectively, providing practical guidance and advice tailored to real needs.',
-          image: null,
+          image: '/public/supporting.png',
           imageAlt: ''
         },
         {
           title: 'Enabling',
           description:
             'We develop reusable patterns, tools and prototypes that make it easier for teams across Defra to adopt AI responsibly.',
-          image: null,
+          image: '/public/enabling.png',
           imageAlt: ''
         },
         {
           title: 'Exploring',
           description:
             'We research emerging AI technologies and test new ideas through proofs of concept, so teams can learn what works before committing.',
-          image: null,
+          image: '/public/exploring.png',
           imageAlt: ''
         },
         {
           title: 'Learning',
           description:
             'We document what we discover, successes and failures. Sharing lessons, case studies, and prompts openly across the department.',
-          image: null,
+          image: '/public/learning.png',
           imageAlt: ''
         }
       ]
