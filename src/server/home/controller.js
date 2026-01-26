@@ -11,59 +11,59 @@ export const homeController = {
           title: 'Getting Started with AI',
           description:
             'Entry point for Defra staff new to AI. Step-by-step guidance on how to begin using AI within your role.',
-          href: '#'
+          href: '/getting-started-with-ai'
         },
         {
           title: 'Tech Radar',
           description:
             'Visual overview of AI technologies being evaluated, trialled, adopted or retired by the Defra AI Capabilities & Enablement team.',
-          href: '#'
+          href: '/tech-radar'
         },
         {
           title: 'Case Studies',
           description: 'Real examples of impactful AI use within Defra.',
-          href: '#'
+          href: '/case-studies'
         },
         {
           title: 'Patterns',
           description:
             'Reusable design and implementation patterns for common AI use cases.',
-          href: '#'
+          href: '/patterns'
         },
         {
           title: 'Proofs of Concept (PoCs)',
           description:
             'Showcase of experimental AI work underway or completed by the Defra AI Capabilities & Enablement team.',
-          href: '#'
+          href: '/proofs-of-concept'
         },
         {
           title: 'Prototypes',
           description: 'Working prototypes Defra staff can explore or test.',
-          href: '#'
+          href: '/prototypes'
         },
         {
           title: 'AI Assistant',
           description:
             'Live AI assistant for Defra staff to experiment with advanced AI techniques safely and securely.',
-          href: '#'
+          href: '/ai-assistant'
         },
         {
           title: 'Prompt Sharing',
           description:
             'Curated library of effective prompts for common Defra tasks, submitted by the Defra AI community.',
-          href: '#'
+          href: '/prompt-sharing'
         },
         {
           title: 'Lessons & Retrospectives',
           description:
             "Transparent write-ups of what worked, what didn't, and why.",
-          href: '#'
+          href: '/lessons-and-retrospectives'
         },
         {
           title: 'Links to CDP',
           description:
             'Quick links to AI related tooling and components hosted by the Cloud Development Platform.',
-          href: '#'
+          href: '/links-to-cdp'
         }
       ],
       blogPosts: [
