@@ -64,6 +64,12 @@ export const homeController = {
           description:
             'Quick links to AI related tooling and components hosted by the Cloud Development Platform.',
           href: '/links-to-cdp'
+        },
+        {
+          title: 'Green Summarisation',
+          description:
+            'Creating lightweight / environmentally friendly text summaries.',
+          href: '/green-summarisation'
         }
       ],
       blogPosts: [

@@ -11,15 +11,19 @@ const contentRoutes = {
   'ai-assistant': 'ai-assistant.md',
   'prompt-sharing': 'prompt-sharing.md',
   'lessons-and-retrospectives': 'lessons-and-retrospectives.md',
-  'links-to-cdp': 'links-to-cdp.md'
+  'links-to-cdp': 'links-to-cdp.md',
+  'green-summarisation': {
+    externalUrl:
+      'https://raw.githubusercontent.com/DEFRA/ai-spike-green-summarisation/refs/heads/main/README.md'
+  }
 }
 
 export const contentController = {
-  handler(request, h) {
+  async handler(request, h) {
     const slug = request.params.slug
-    const filename = contentRoutes[slug]
+    const routeConfig = contentRoutes[slug]
 
-    if (!filename) {
+    if (!routeConfig) {
       return h
         .view('error/index', {
           pageTitle: 'Page not found',
@@ -30,7 +34,10 @@ export const contentController = {
     }
 
     try {
-      const { meta, content } = loadContent(filename)
+      const filename = typeof routeConfig === 'string' ? routeConfig : null
+      const externalUrl =
+        typeof routeConfig === 'object' ? routeConfig.externalUrl : null
+      const { meta, content } = await loadContent(filename, externalUrl)
       const renderedContent = markdown(content)
 
       return h.view('content/index', {
