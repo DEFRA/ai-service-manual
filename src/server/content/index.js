@@ -13,6 +13,11 @@ export const content = {
           method: 'GET',
           path: '/{slug}',
           ...contentController
+        },
+        {
+          method: 'GET',
+          path: '/{category}/{slug}',
+          ...contentController
         }
       ])
     }

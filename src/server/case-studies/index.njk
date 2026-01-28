@@ -1,0 +1,40 @@
+{% extends 'layouts/page.njk' %}
+
+{% block content %}
+  <section class="app-hero-section govuk-!-padding-top-9 govuk-!-padding-bottom-7">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+          <h1 class="govuk-heading-xl govuk-!-font-size-64 govuk-!-margin-top-5 app-hero-title">
+            Case Studies
+          </h1>
+          <p class="govuk-body-l">
+            Real examples of AI use across Defra. From small experiments to large transformations. This is where you see what is actually happening across the department.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="govuk-!-margin-bottom-0">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div class="dfe-grid-container">
+            {% for caseStudy in caseStudies %}
+              <a href="{{ caseStudy.href }}" class="dfe-card">
+                <div class="dfe-card-container">
+                  <h3 class="govuk-heading-m">
+                    <span class="govuk-link govuk-link--no-visited-state dfe-card-link--header">{{ caseStudy.title }}</span>
+                  </h3>
+                  <p class="govuk-body">{{ caseStudy.description }}</p>
+                </div>
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

@@ -4,7 +4,10 @@ import { markdown } from '../../config/nunjucks/filters/markdown.js'
 const contentRoutes = {
   'getting-started-with-ai': 'getting-started-with-ai.md',
   'tech-radar': 'tech-radar.md',
-  'case-studies': 'case-studies.md',
+  'case-studies/nrf-discovery': 'nrf-discovery.md',
+  'case-studies/ipaffs-replatforming': 'ipaffs-replatforming.md',
+  'case-studies/plp-cycle-time': 'plp-cycle-time.md',
+  'case-studies/nrf-alpha': 'nrf-alpha.md',
   patterns: 'patterns.md',
   'proofs-of-concept': 'proofs-of-concept.md',
   prototypes: 'prototypes.md',
@@ -16,8 +19,10 @@ const contentRoutes = {
 
 export const contentController = {
   handler(request, h) {
+    const category = request.params.category
     const slug = request.params.slug
-    const filename = contentRoutes[slug]
+    const routeKey = category ? `${category}/${slug}` : slug
+    const filename = contentRoutes[routeKey]
 
     if (!filename) {
       return h
@@ -33,19 +38,29 @@ export const contentController = {
       const { meta, content } = loadContent(filename)
       const renderedContent = markdown(content)
 
+      const breadcrumbs = [
+        {
+          text: 'Home',
+          href: '/'
+        }
+      ]
+
+      if (category) {
+        breadcrumbs.push({
+          text: 'Case Studies',
+          href: '/case-studies'
+        })
+      }
+
+      breadcrumbs.push({
+        text: meta.title || slug
+      })
+
       return h.view('content/index', {
         pageTitle: meta.title || slug,
         heading: meta.title || slug,
         content: renderedContent,
-        breadcrumbs: [
-          {
-            text: 'Home',
-            href: '/'
-          },
-          {
-            text: meta.title || slug
-          }
-        ]
+        breadcrumbs
       })
     } catch (error) {
       return h
