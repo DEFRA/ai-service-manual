@@ -1,5 +1,5 @@
 /**
- * Home page controller for Defra AI Capabilities & Enablement
+ * Home page controller for AI Capabilities & Enablement
  */
 export const homeController = {
   handler(_request, h) {
@@ -10,18 +10,18 @@ export const homeController = {
         {
           title: 'Getting Started with AI',
           description:
-            'Entry point for Defra staff new to AI. Step-by-step guidance on how to begin using AI within your role.',
+            'Entry point for teams new to AI. Step-by-step guidance on how to begin using AI within your role.',
           href: '/getting-started-with-ai'
         },
         {
           title: 'Tech Radar',
           description:
-            'Visual overview of AI technologies being evaluated, trialled, adopted or retired by the Defra AI Capabilities & Enablement team.',
+            'Visual overview of AI technologies being evaluated, trialled, adopted or retired by the AI Capabilities & Enablement team.',
           href: '/tech-radar'
         },
         {
           title: 'Case Studies',
-          description: 'Real examples of impactful AI use within Defra.',
+          description: 'Real examples of impactful AI use within teams.',
           href: '/case-studies'
         },
         {
@@ -33,24 +33,24 @@ export const homeController = {
         {
           title: 'Proofs of Concept (PoCs)',
           description:
-            'Showcase of experimental AI work underway or completed by the Defra AI Capabilities & Enablement team.',
+            'Showcase of experimental AI work underway or completed by the AI Capabilities & Enablement team.',
           href: '/proofs-of-concept'
         },
         {
           title: 'Prototypes',
-          description: 'Working prototypes Defra staff can explore or test.',
+          description: 'Working prototypes teams can explore or test.',
           href: '/prototypes'
         },
         {
           title: 'AI Assistant',
           description:
-            'Live AI assistant for Defra staff to experiment with advanced AI techniques safely and securely.',
+            'Live AI assistant for teams to experiment with advanced AI techniques safely and securely.',
           href: '/ai-assistant'
         },
         {
           title: 'Prompt Sharing',
           description:
-            'Curated library of effective prompts for common Defra tasks, submitted by the Defra AI community.',
+            'Curated library of effective prompts for common tasks, submitted by the AI community.',
           href: '/prompt-sharing'
         },
         {
@@ -64,6 +64,12 @@ export const homeController = {
           description:
             'Quick links to AI related tooling and components hosted by the Cloud Development Platform.',
           href: '/links-to-cdp'
+        },
+        {
+          title: 'Green Summarisation',
+          description:
+            'Creating lightweight / environmentally friendly text summaries.',
+          href: '/green-summarisation'
         }
       ],
       blogPosts: [
@@ -101,14 +107,14 @@ export const homeController = {
         {
           title: 'Supporting',
           description:
-            'We help Defra teams get started with AI safely and effectively, providing practical guidance and advice tailored to real needs.',
+            'We help teams get started with AI safely and effectively, providing practical guidance and advice tailored to real needs.',
           image: '/public/supporting.png',
           imageAlt: ''
         },
         {
           title: 'Enabling',
           description:
-            'We develop reusable patterns, tools and prototypes that make it easier for teams across Defra to adopt AI responsibly.',
+            'We develop reusable patterns, tools and prototypes that make it easier for teams to adopt AI responsibly.',
           image: '/public/enabling.png',
           imageAlt: ''
         },
