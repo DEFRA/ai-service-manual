@@ -1,21 +1,18 @@
+import { createTilePageData } from '../common/helpers/tile-page-helper.js'
+
 /**
  * Case Studies controller for Defra AI Capabilities & Enablement
  */
 export const caseStudiesController = {
   handler(_request, h) {
-    return h.view('case-studies/index', {
+    const { viewName, viewData } = createTilePageData({
       pageTitle: 'Case Studies',
       heading: 'Case Studies',
-      breadcrumbs: [
-        {
-          text: 'Home',
-          href: '/'
-        },
-        {
-          text: 'Case Studies'
-        }
-      ],
-      caseStudies: [
+      description:
+        'Real examples of AI use across Defra. From small experiments to large transformations. This is where you see what is actually happening across the department.',
+      viewName: 'case-studies/index',
+      itemsKey: 'caseStudies',
+      items: [
         {
           title: 'NRF Discovery',
           description:
@@ -42,5 +39,7 @@ export const caseStudiesController = {
         }
       ]
     })
+
+    return h.view(viewName, viewData)
   }
 }

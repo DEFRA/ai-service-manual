@@ -9,7 +9,6 @@ const contentRoutes = {
   'case-studies/plp-cycle-time': 'plp-cycle-time.md',
   'case-studies/nrf-alpha': 'nrf-alpha.md',
   patterns: 'patterns.md',
-  'proofs-of-concept': 'proofs-of-concept.md',
   prototypes: 'prototypes.md',
   'ai-assistant': 'ai-assistant.md',
   'prompt-sharing': 'prompt-sharing.md',

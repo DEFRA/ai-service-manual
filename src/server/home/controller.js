@@ -42,12 +42,6 @@ export const homeController = {
           href: '/prototypes'
         },
         {
-          title: 'AI Assistant',
-          description:
-            'Live AI assistant for teams to experiment with advanced AI techniques safely and securely.',
-          href: '/ai-assistant'
-        },
-        {
           title: 'Prompt Sharing',
           description:
             'Curated library of effective prompts for common tasks, submitted by the AI community.',
@@ -64,12 +58,6 @@ export const homeController = {
           description:
             'Quick links to AI related tooling and components hosted by the Cloud Development Platform.',
           href: '/links-to-cdp'
-        },
-        {
-          title: 'Green Summarisation',
-          description:
-            'Creating lightweight / environmentally friendly text summaries.',
-          href: '/green-summarisation'
         }
       ],
       blogPosts: [
