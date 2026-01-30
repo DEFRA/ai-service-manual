@@ -4,21 +4,27 @@ title: Links to CDP
 
 # Links to CDP
 
-Quick links to AI related tooling and components hosted by the Cloud Development Platform.
+## Getting support
 
-## Overview
+If you're getting started with integrating AI into your service, your first point of call is the ACE team.
 
-This section provides quick links to AI related tooling and components hosted by the Cloud Development Platform (CDP).
+Reach out for support in the #ask-ace channel on Defra Gray Slack.
 
-## CDP Resources
+## CDP resources
 
-Content coming soon...
+CDP is integrated with Amazon Bedrock.
 
-## Related Pages
+The integration includes:
 
-- [Tech Radar](/tech-radar)
-- [Prototypes](/prototypes)
-- [Patterns](/patterns)
-- [AI Assistant](/ai-assistant)
+- various models
+- guardrails and safety controls
+- cost management and tracking
+
+This integration is growing and changing. Check the [CDP documentation](https://portal.cdp-int.defra.cloud/documentation/how-to/bedrock-ai.md) for the latest information.
+
+For support, reach out in:
+
+- #ask-ace on Defra Gray Slack
+- CDP support channel
 
 [← Back to Home](/)
