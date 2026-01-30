@@ -8,11 +8,9 @@ Curated library of effective prompts for common Defra tasks, submitted by the De
 
 ## Overview
 
-This section provides a curated library of effective prompts for common Defra tasks, submitted by the Defra AI community.
+The prompt library is launching soon.
 
-## Prompt Library
-
-Content coming soon...
+If you would like to share feedback about what you want to see from prompt sharing, contact us at andrew.roberts@defra.com.
 
 ## Related Pages
 
