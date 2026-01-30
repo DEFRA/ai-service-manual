@@ -2,8 +2,6 @@
 title: Links to CDP
 ---
 
-# Links to CDP
-
 ## Getting support
 
 If you're getting started with integrating AI into your service, your first point of call is the ACE team.

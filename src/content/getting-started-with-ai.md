@@ -2,8 +2,6 @@
 title: Getting Started with AI
 ---
 
-# Getting Started with AI
-
 ## Coming soon
 
 Step-by-step guides for using AI in your role at Defra.

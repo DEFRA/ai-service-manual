@@ -2,8 +2,6 @@
 title: Prompt Sharing
 ---
 
-# Prompt Sharing
-
 Curated library of effective prompts for common Defra tasks, submitted by the Defra AI community.
 
 ## Overview
