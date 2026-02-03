@@ -1,0 +1,38 @@
+{% extends 'layouts/page.njk' %}
+
+{% block content %}
+  {{ appHeading({
+    text: heading,
+    caption: "ai-service-manual"
+  }) }}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body">{{ description }}</p>
+
+      <h2 class="govuk-heading-l">Overview</h2>
+      <p class="govuk-body">The Tech Radar provides a visual overview of AI technologies and their current status within Defra.</p>
+
+      <div class="radar-container">
+        <object class="radar-object" type="image/svg+xml" data="{{ getAssetPath('aice-tech-radar.svg') }}">
+          <!-- Fallback for browsers that do not support SVG -->
+          <img src="{{ getAssetPath('aice-tech-radar.svg') }}" alt="Defra AI Capabilities and Enablement (AICE) Tech Radar">
+        </object>
+      </div>
+
+      <h2 class="govuk-heading-l">Technology Categories</h2>
+      <p class="govuk-body">Content coming soon...</p>
+
+      <h2 class="govuk-heading-l">Related Pages</h2>
+      <ul class="govuk-list govuk-list--bullet">
+        {% for page in relatedPages %}
+          <li><a href="{{ page.href }}" class="govuk-link">{{ page.text }}</a></li>
+        {% endfor %}
+      </ul>
+
+      <p class="govuk-body">
+        <a href="/" class="govuk-link">← Back to Home</a>
+      </p>
+    </div>
+  </div>
+{% endblock %}
