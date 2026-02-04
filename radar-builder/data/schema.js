@@ -7,9 +7,7 @@ const entrySchema = Joi.object({
   quadrant: Joi.string()
     .valid('Frameworks', 'Platforms', 'Techniques', 'Tools')
     .required(),
-  ring: Joi.string()
-    .valid('Adopt', 'Pilot', 'Assess', 'Hold')
-    .required(),
+  ring: Joi.string().valid('Adopt', 'Pilot', 'Assess', 'Hold').required(),
   createdTimestamp: Joi.string().isoDate().required(),
   updatedTimestamp: Joi.string().isoDate().required(),
   active: Joi.boolean().required()

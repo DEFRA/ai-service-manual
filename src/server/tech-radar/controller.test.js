@@ -23,13 +23,16 @@ describe('#techRadarController', () => {
     expect(statusCode).toBe(statusCodes.ok)
   })
 
-  test.each(['false', 'yes', '1'])('Should display normal view when fullscreen query parameter is not true', async (value) => {
-    const { result, statusCode } = await server.inject({
-      method: 'GET',
-      url: `/tech-radar?fullscreen=${value}`
-    })
+  test.each(['false', 'yes', '1'])(
+    'Should display normal view when fullscreen query parameter is not true',
+    async (value) => {
+      const { result, statusCode } = await server.inject({
+        method: 'GET',
+        url: `/tech-radar?fullscreen=${value}`
+      })
 
-    expect(result).toEqual(expect.stringContaining('Tech Radar'))
-    expect(statusCode).toBe(statusCodes.ok)
-  })
+      expect(result).toEqual(expect.stringContaining('Tech Radar'))
+      expect(statusCode).toBe(statusCodes.ok)
+    }
+  )
 })

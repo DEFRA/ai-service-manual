@@ -1,10 +1,10 @@
 /**
  * @module Radar
- * 
+ *
  * Module intended to be ran on the client-side to enable progressive
- * enhancements for the tech-radar SVG, while allowing display of the 
+ * enhancements for the tech-radar SVG, while allowing display of the
  * radar even if JavaScript is disabled.
- * 
+ *
  * Enhancements include:
  * - Highlighting blip upon hovering on legend item
  * - Highlighting legend item upon hovering on blip
@@ -12,11 +12,11 @@
 
 /**
  * Loads the SVG document from the object container
- * 
+ *
  * @returns {Promise<Document>} The loaded SVG document
  * @throws {Error} If SVG container is not found or fails to load
  */
-async function loadSvg () {
+async function loadSvg() {
   const radarContainer = document.querySelector('#radar-object')
 
   if (!radarContainer) {
@@ -45,12 +45,12 @@ async function loadSvg () {
  * Find pair of blip and legend elements by ID
  *
  * Each blip / legend pair are linked by their IDs, e.g. blip1 and legendItem1
- * 
+ *
  * @param {Document} svgDoc - The SVG document
  * @param {string} id - The ID to search for
  * @returns {Object} Object containing blip and legend elements
  */
-function findRadarEntryPair (svgDoc, id) {
+function findRadarEntryPair(svgDoc, id) {
   return {
     blip: svgDoc.querySelector(`#blip${id} circle`),
     legend: svgDoc.querySelector(`#legendItem${id}`)
@@ -59,12 +59,12 @@ function findRadarEntryPair (svgDoc, id) {
 
 /**
  * Extracts the ID from an element's ID attribute by removing a prefix
- * 
+ *
  * @param {Element} element - The element to extract ID from
  * @param {string} prefix - The prefix to remove
  * @returns {string|null} The extracted ID or null if not found
  */
-function extractIdFromElement (element, prefix) {
+function extractIdFromElement(element, prefix) {
   const fullId = element?.getAttribute('id')
   return fullId?.replace(prefix, '') || null
 }
@@ -74,7 +74,7 @@ function extractIdFromElement (element, prefix) {
  * @param {Document} svgDoc - The SVG document
  * @param {string} id - The ID of the elements to style
  */
-function applyHoverStyling (svgDoc, id) {
+function applyHoverStyling(svgDoc, id) {
   if (!id) {
     throw new Error('A valid ID must be provided to apply hover styling')
   }
@@ -99,7 +99,7 @@ function applyHoverStyling (svgDoc, id) {
  * @param {Document} svgDoc - The SVG document
  * @param {string} id - The ID of the elements to unstyle
  */
-function removeHoverStyling (svgDoc, id) {
+function removeHoverStyling(svgDoc, id) {
   if (!id) {
     throw new Error('A valid ID must be provided to remove hover styling')
   }
@@ -127,7 +127,7 @@ function removeHoverStyling (svgDoc, id) {
  * @param {Document} svgDoc - The SVG document
  * @param {Event} event - The mouse event (mouseover or mouseout)
  */
-function handleBlipMouseEvent (svgDoc, event) {
+function handleBlipMouseEvent(svgDoc, event) {
   const target = event.target.closest('[id]')
   const id = extractIdFromElement(target, 'blip')
 
@@ -143,7 +143,7 @@ function handleBlipMouseEvent (svgDoc, event) {
  * @param {Document} svgDoc - The SVG document
  * @param {Event} event - The mouse event (mouseover or mouseout)
  */
-function handleLegendMouseEvent (svgDoc, event) {
+function handleLegendMouseEvent(svgDoc, event) {
   const target = event.target.closest('[id]')
   const id = extractIdFromElement(target, 'legendItem')
 
@@ -156,23 +156,31 @@ function handleLegendMouseEvent (svgDoc, event) {
 
 /**
  * Applies progressive enhancements to the tech-radar SVG document.
- * 
+ *
  * This includes:
  * - Highlighting blip upon hovering on legend item
  * - Highlighting legend item upon hovering on blip
  */
-async function applyRadarEnhancements () {
+async function applyRadarEnhancements() {
   try {
     const svgDoc = await loadSvg()
 
-    svgDoc.querySelectorAll('.blip').forEach(blip => {
-      blip.addEventListener('mouseover', (event) => handleBlipMouseEvent(svgDoc, event))
-      blip.addEventListener('mouseout', (event) => handleBlipMouseEvent(svgDoc, event))
+    svgDoc.querySelectorAll('.blip').forEach((blip) => {
+      blip.addEventListener('mouseover', (event) =>
+        handleBlipMouseEvent(svgDoc, event)
+      )
+      blip.addEventListener('mouseout', (event) =>
+        handleBlipMouseEvent(svgDoc, event)
+      )
     })
 
-    svgDoc.querySelectorAll('.legendItem').forEach(legendItem => {
-      legendItem.addEventListener('mouseover', (event) => handleLegendMouseEvent(svgDoc, event))
-      legendItem.addEventListener('mouseout', (event) => handleLegendMouseEvent(svgDoc, event))
+    svgDoc.querySelectorAll('.legendItem').forEach((legendItem) => {
+      legendItem.addEventListener('mouseover', (event) =>
+        handleLegendMouseEvent(svgDoc, event)
+      )
+      legendItem.addEventListener('mouseout', (event) =>
+        handleLegendMouseEvent(svgDoc, event)
+      )
     })
   } catch (error) {
     console.error('Failed to initialize radar enhancements:', error)
