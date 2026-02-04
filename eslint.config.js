@@ -4,7 +4,7 @@ export default neostandard({
   env: ['node', 'vitest'],
   ignores: [
     ...neostandard.resolveIgnoresFromGitignore(),
-    'src/tech-radar/lib/**'
+    'radar-builder/lib/**'
   ],
   noJsx: true,
   noStyle: true
