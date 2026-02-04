@@ -2,7 +2,12 @@
  * @module Radar
  * 
  * Module intended to be ran on the client-side to enable progressive
- * enhancements for the tech-radar SVG.
+ * enhancements for the tech-radar SVG, while allowing display of the 
+ * radar even if JavaScript is disabled.
+ * 
+ * Enhancements include:
+ * - Highlighting blip upon hovering on legend item
+ * - Highlighting legend item upon hovering on blip
  */
 
 /**
