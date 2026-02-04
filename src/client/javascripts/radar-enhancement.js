@@ -16,7 +16,7 @@
  * @returns {Promise<Document>} The loaded SVG document
  * @throws {Error} If SVG container is not found or fails to load
  */
-async function loadSvg() {
+function loadSvg() {
   console.log('Loading radar SVG document')
 
   const radarContainer = document.querySelector('#radar-object')
@@ -169,34 +169,30 @@ function handleLegendMouseEvent(svgDoc, event) {
  * - Highlighting blip upon hovering on legend item
  * - Highlighting legend item upon hovering on blip
  */
-async function applyRadarEnhancements() {
-  try {
-    const svgDoc = await loadSvg()
+function applyRadarEnhancements() {
+  loadSvg()
+    .then((svgDoc) => {
+      svgDoc.querySelectorAll('.blip').forEach((blip) => {
+        blip.addEventListener('mouseover', (event) =>
+          handleBlipMouseEvent(svgDoc, event)
+        )
+        blip.addEventListener('mouseout', (event) =>
+          handleBlipMouseEvent(svgDoc, event)
+        )
+      })
 
-    console.log('Applying radar enhancements')
-
-    svgDoc.querySelectorAll('.blip').forEach((blip) => {
-      blip.addEventListener('mouseover', (event) =>
-        handleBlipMouseEvent(svgDoc, event)
-      )
-      blip.addEventListener('mouseout', (event) =>
-        handleBlipMouseEvent(svgDoc, event)
-      )
+      svgDoc.querySelectorAll('.legendItem').forEach((legendItem) => {
+        legendItem.addEventListener('mouseover', (event) =>
+          handleLegendMouseEvent(svgDoc, event)
+        )
+        legendItem.addEventListener('mouseout', (event) =>
+          handleLegendMouseEvent(svgDoc, event)
+        )
+      })
     })
-
-    svgDoc.querySelectorAll('.legendItem').forEach((legendItem) => {
-      legendItem.addEventListener('mouseover', (event) =>
-        handleLegendMouseEvent(svgDoc, event)
-      )
-      legendItem.addEventListener('mouseout', (event) =>
-        handleLegendMouseEvent(svgDoc, event)
-      )
+    .catch((error) => {
+      console.error('Failed to initialize radar enhancements:', error)
     })
-  } catch (error) {
-    console.error('Failed to initialize radar enhancements:', error)
-  }
 }
 
-await applyRadarEnhancements()
-
-console.log('Radar enhancements script loaded')
+applyRadarEnhancements()
