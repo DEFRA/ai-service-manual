@@ -17,6 +17,8 @@
  * @throws {Error} If SVG container is not found or fails to load
  */
 async function loadSvg() {
+  console.log('Loading radar SVG document')
+
   const radarContainer = document.querySelector('#radar-object')
 
   if (!radarContainer) {
@@ -26,6 +28,7 @@ async function loadSvg() {
   return new Promise((resolve, reject) => {
     const handleLoad = () => {
       const svgDoc = radarContainer.contentDocument
+
       if (svgDoc) {
         resolve(svgDoc)
       } else {
@@ -33,7 +36,12 @@ async function loadSvg() {
       }
     }
 
-    if (radarContainer.contentDocument) {
+    // Handle Chrome behavior, which sets a frame url to
+    // 'about:blank' before firing the load event
+    // Check whether the root element is actually an SVG tag
+    const rootElement = radarContainer.contentDocument?.documentElement
+
+    if (rootElement?.tagName === 'svg') {
       handleLoad()
     } else {
       radarContainer.addEventListener('load', handleLoad, { once: true })
@@ -165,6 +173,8 @@ async function applyRadarEnhancements() {
   try {
     const svgDoc = await loadSvg()
 
+    console.log('Applying radar enhancements')
+
     svgDoc.querySelectorAll('.blip').forEach((blip) => {
       blip.addEventListener('mouseover', (event) =>
         handleBlipMouseEvent(svgDoc, event)
@@ -188,3 +198,5 @@ async function applyRadarEnhancements() {
 }
 
 await applyRadarEnhancements()
+
+console.log('Radar enhancements script loaded')
