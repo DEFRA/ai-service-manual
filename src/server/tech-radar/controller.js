@@ -3,6 +3,13 @@
  */
 export const techRadarController = {
   handler(_request, h) {
+    if (_request.query.fullscreen === 'true') {
+      return h.view('tech-radar/full-screen', {
+        pageTitle: 'Tech Radar',
+        heading: 'Tech Radar'
+      })
+    }
+
     return h.view('tech-radar/index', {
       pageTitle: 'Tech Radar',
       heading: 'Tech Radar',

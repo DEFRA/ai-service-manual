@@ -1,9 +1,9 @@
 .radar-container {
   width: 100%;
+  height: 100%;
   max-width: 1000px;
   margin: 0 auto;
 
-  // Ensure responsive behavior
   @media screen and (max-width: 1024px) {
     max-width: 95%;
     padding: 0 1rem;
@@ -14,7 +14,6 @@
     padding: 0 0.5rem;
   }
 
-  // Handle radar content
   object,
   img {
     width: 100%;
@@ -24,15 +23,39 @@
 }
 
 .radar-container-fullscreen {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  object,
+  img {
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: calc(100vh - 60px);
+    object-fit: contain;
+  }
 }
 
-.radar-object {
-  width: 100%;
-  height: 100%;
+body:has(.radar-container-fullscreen) {
+  .govuk-back-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 15px;
+    border-radius: 4px;
+  }
 }
 
 section:has(.radar-container) {

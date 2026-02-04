@@ -37,7 +37,7 @@ export async function createServer() {
         },
         xss: 'enabled',
         noSniff: true,
-        xframe: true
+        xframe: 'sameorigin'
       }
     },
     router: {
@@ -62,7 +62,7 @@ export async function createServer() {
     nunjucksConfig,
     Scooter,
     contentSecurityPolicy,
-    router // Register all the controllers/routes defined in src/server/router.js
+    router
   ])
 
   server.ext('onPreResponse', catchAll)
