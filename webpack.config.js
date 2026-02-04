@@ -22,7 +22,8 @@ export default {
   entry: {
     application: {
       import: ['./javascripts/application.js', './stylesheets/application.scss']
-    }
+    },
+    radar: './javascripts/radar.js'
   },
   experiments: {
     outputModule: true
@@ -189,7 +190,7 @@ export default {
         },
         {
           from: path.join(dirname, '.artifacts/tech-radar'),
-          to: '[name][contenthash:7][ext]',
+          to: '[name]-[contenthash:7][ext]',
           noErrorOnMissing: true
         }
       ]

@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build:frontend": "run-s build:tech-radar build:webpack",
-    "build:tech-radar": "node ./src/tech-radar/generate.js",
+    "build:tech-radar": "node ./radar-builder/generate.js",
     "build:webpack": "NODE_ENV=production webpack",
     "dev": "run-p frontend:watch server:watch",
     "dev:debug": "run-p frontend:watch server:debug",

@@ -12,7 +12,7 @@ async function main() {
     await readFile('./src/tech-radar/data/radar.json', 'utf-8')
   )
 
-  const { validated, error } = radarSchema.validate(data)
+  const { value: validated, error } = radarSchema.validate(data)
 
   if (error) {
     throw new Error(`Invalid radar data: ${error.message}`)

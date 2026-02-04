@@ -5,7 +5,7 @@ import {
   RADAR_QUADRANT_MAP,
   RADAR_RING_COLOUR_MAP,
   RADAR_RING_MAP
-} from '../radar/constants.js'
+} from './constants.js'
 
 async function buildRadar(entries) {
   const jsdom = new JSDOM('<html><body></body></html>', {
@@ -18,11 +18,11 @@ async function buildRadar(entries) {
   jsdom.window.document.body.appendChild(svg)
 
   await radarVisualization(jsdom.window.document, {
-    repo_url: 'https://defra.github.io/aice-team',
+    repo_url: '/tech-radar',
     svg_id: 'radar',
     width: 1450,
     height: 1000,
-    scale: 1.0,
+    scale: 1,
     colors: {
       background: '#fff',
       grid: '#bbb',
