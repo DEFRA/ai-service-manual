@@ -1,4 +1,7 @@
+import path from 'node:path'
 import { readFile } from 'node:fs/promises'
+import { fileURLToPath } from 'node:url'
+
 import { mapEntries } from './radar/entries-mapper.js'
 
 import { buildRadar } from './radar/builder.js'
@@ -7,9 +10,11 @@ import { exportAsPng, exportAsSvg } from './radar/exporter.js'
 
 const dest = '.artifacts/tech-radar/aice-tech-radar'
 
+const dirname = path.dirname(fileURLToPath(import.meta.url))
+
 async function main() {
   const data = JSON.parse(
-    await readFile('./src/tech-radar/data/radar.json', 'utf-8')
+    await readFile(path.join(dirname, '../src/tech-radar/radar.json'), 'utf-8')
   )
 
   const { value: validated, error } = radarSchema.validate(data)
