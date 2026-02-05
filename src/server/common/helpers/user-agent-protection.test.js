@@ -1,10 +1,4 @@
-import {
-  describe,
-  beforeEach,
-  afterEach,
-  test,
-  expect
-} from 'vitest'
+import { describe, beforeEach, afterEach, test, expect } from 'vitest'
 import http2 from 'node:http2'
 import { createServer } from '../../server.js'
 
