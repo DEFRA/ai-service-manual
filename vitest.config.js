@@ -18,7 +18,9 @@ export default defineConfig({
         'stylelint.config.js',
         'vitest.config.js',
         '.sonarlint',
-        'babel.config.cjs'
+        'babel.config.cjs',
+        // Exclude client-side assets from unit test coverage
+        'src/client/**'
       ]
     }
   }
