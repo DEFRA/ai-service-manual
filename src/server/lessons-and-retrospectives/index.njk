@@ -1,0 +1,6 @@
+{% extends 'layouts/page.njk' %}
+{% from 'partials/tile-grid.njk' import tileGrid %}
+
+{% block content %}
+  {{ tileGrid(lessons, heading, description) }}
+{% endblock %}
