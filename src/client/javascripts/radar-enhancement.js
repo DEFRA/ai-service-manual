@@ -36,9 +36,9 @@ function loadSvg() {
       }
     }
 
-    // Handle Chrome behavior, which sets a frame url to
-    // 'about:blank' before firing the load event
-    // Check whether the root element is actually an SVG tag
+    // Handle Chrome behavior, which sets a object document to
+    // 'about:blank' before while loading the SVG.
+    // Check whether the root element is actually an SVG tag.
     const rootElement = radarContainer.contentDocument?.documentElement
 
     if (rootElement?.tagName === 'svg') {
