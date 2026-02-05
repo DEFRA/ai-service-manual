@@ -12,6 +12,9 @@ const dest = '.artifacts/tech-radar/aice-tech-radar'
 
 const dirname = path.dirname(fileURLToPath(import.meta.url))
 
+const PNG_WIDTH = 1450
+const PNG_HEIGHT = 1000
+
 async function main() {
   const data = JSON.parse(
     await readFile(path.join(dirname, '../src/tech-radar/radar.json'), 'utf-8')
@@ -26,7 +29,7 @@ async function main() {
   const entries = mapEntries(validated.entries)
   const svg = await buildRadar(entries)
 
-  await exportAsPng(svg, `${dest}.png`, 1450, 1000)
+  await exportAsPng(svg, `${dest}.png`, PNG_WIDTH, PNG_HEIGHT)
   await exportAsSvg(svg, `${dest}.svg`)
 }
 
