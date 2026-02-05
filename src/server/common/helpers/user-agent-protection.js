@@ -15,8 +15,14 @@ export const userAgentProtection = {
 
       if (userAgent && userAgent.length > MAX_USER_AGENT_LENGTH) {
         // Truncate the User-Agent header to prevent ReDoS attacks
-        request.headers['user-agent'] = userAgent.substring(0, MAX_USER_AGENT_LENGTH)
-        server.log(['security', 'user-agent'], `Truncated User-Agent from ${userAgent.length} to ${MAX_USER_AGENT_LENGTH} chars`)
+        request.headers['user-agent'] = userAgent.substring(
+          0,
+          MAX_USER_AGENT_LENGTH
+        )
+        server.log(
+          ['security', 'user-agent'],
+          `Truncated User-Agent from ${userAgent.length} to ${MAX_USER_AGENT_LENGTH} chars`
+        )
       }
 
       return h.continue

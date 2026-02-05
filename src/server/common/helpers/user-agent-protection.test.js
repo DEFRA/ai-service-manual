@@ -1,4 +1,11 @@
-import { describe, beforeEach, afterEach, test, expect, beforeAll } from 'vitest'
+import {
+  describe,
+  beforeEach,
+  afterEach,
+  test,
+  expect,
+  beforeAll
+} from 'vitest'
 import http2 from 'node:http2'
 import { createServer } from '../../server.js'
 import { setupModelsApiMocks } from '../../../../mocks/models-api-handlers.js'
@@ -29,7 +36,8 @@ describe('user-agent protection', () => {
       method: 'GET',
       url: '/start',
       headers: {
-        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        'user-agent':
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
       }
     })
 
@@ -56,7 +64,10 @@ describe('user-agent protection', () => {
 
   test('should truncate User-Agent strings with suspicious patterns (ReDoS PoC)', async () => {
     const maliciousUserAgent = `Mozilla/5.0 (${'X'.repeat(200)}) Gecko/20100101 Firefox/77.0`
-    const expectedTruncated = maliciousUserAgent.substring(0, MAX_USER_AGENT_LENGTH)
+    const expectedTruncated = maliciousUserAgent.substring(
+      0,
+      MAX_USER_AGENT_LENGTH
+    )
 
     const response = await server.inject({
       method: 'GET',
@@ -74,7 +85,10 @@ describe('user-agent protection', () => {
 
   test('should truncate User-Agent strings with repeated characters', async () => {
     const maliciousUserAgent = `Mozilla/5.0 ${'A'.repeat(1500)} Safari`
-    const expectedTruncated = maliciousUserAgent.substring(0, MAX_USER_AGENT_LENGTH)
+    const expectedTruncated = maliciousUserAgent.substring(
+      0,
+      MAX_USER_AGENT_LENGTH
+    )
 
     const response = await server.inject({
       method: 'GET',
@@ -100,7 +114,8 @@ describe('user-agent protection', () => {
   })
 
   test('should verify actual header truncation by inspecting processed request', async () => {
-    const originalUserAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 EdgeCustomLongName/SuperLongVersionString'
+    const originalUserAgent =
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 EdgeCustomLongName/SuperLongVersionString'
     let capturedUserAgent = null
 
     server.route({
@@ -124,12 +139,15 @@ describe('user-agent protection', () => {
     expect(originalUserAgent.length).toBeGreaterThan(MAX_USER_AGENT_LENGTH)
     expect(capturedUserAgent).toBeDefined()
     expect(capturedUserAgent.length).toBe(MAX_USER_AGENT_LENGTH)
-    expect(capturedUserAgent).toBe(originalUserAgent.substring(0, MAX_USER_AGENT_LENGTH))
+    expect(capturedUserAgent).toBe(
+      originalUserAgent.substring(0, MAX_USER_AGENT_LENGTH)
+    )
     expect(originalUserAgent.startsWith(capturedUserAgent)).toBe(true)
   })
 
   test('should not modify User-Agent headers that are already within limit', async () => {
-    const normalUserAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+    const normalUserAgent =
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
     let capturedUserAgent = null
 
     server.route({
