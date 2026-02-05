@@ -23,9 +23,7 @@ export default {
     application: {
       import: ['./javascripts/application.js', './stylesheets/application.scss']
     },
-    radar: [
-      './javascripts/radar-enhancement.js'
-    ]
+    radar: ['./javascripts/radar-enhancement.js']
   },
   experiments: {
     outputModule: true
