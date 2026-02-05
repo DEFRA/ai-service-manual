@@ -3,22 +3,16 @@ import {
   beforeEach,
   afterEach,
   test,
-  expect,
-  beforeAll
+  expect
 } from 'vitest'
 import http2 from 'node:http2'
 import { createServer } from '../../server.js'
-import { setupModelsApiMocks } from '../../../../mocks/models-api-handlers.js'
 
 const { constants: httpConstants } = http2
 const MAX_USER_AGENT_LENGTH = 150
 
 describe('user-agent protection', () => {
   let server
-
-  beforeAll(() => {
-    setupModelsApiMocks()
-  })
 
   beforeEach(async () => {
     server = await createServer()
@@ -34,7 +28,7 @@ describe('user-agent protection', () => {
   test('should allow normal User-Agent strings', async () => {
     const response = await server.inject({
       method: 'GET',
-      url: '/start',
+      url: '/',
       headers: {
         'user-agent':
           'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
@@ -50,7 +44,7 @@ describe('user-agent protection', () => {
 
     const response = await server.inject({
       method: 'GET',
-      url: '/start',
+      url: '/',
       headers: {
         'user-agent': longUserAgent
       }
@@ -71,7 +65,7 @@ describe('user-agent protection', () => {
 
     const response = await server.inject({
       method: 'GET',
-      url: '/start',
+      url: '/',
       headers: {
         'user-agent': maliciousUserAgent
       }
@@ -92,7 +86,7 @@ describe('user-agent protection', () => {
 
     const response = await server.inject({
       method: 'GET',
-      url: '/start',
+      url: '/',
       headers: {
         'user-agent': maliciousUserAgent
       }
@@ -107,7 +101,7 @@ describe('user-agent protection', () => {
   test('should handle requests without User-Agent header', async () => {
     const response = await server.inject({
       method: 'GET',
-      url: '/start'
+      url: '/'
     })
 
     expect(response.statusCode).toBe(httpConstants.HTTP_STATUS_OK)
