@@ -92,7 +92,7 @@ function applyHoverStyling(svgDoc, id) {
   if (blip) {
     const currentFill = blip.getAttribute('fill')
     if (currentFill) {
-      blip.setAttribute('data-original-fill', currentFill)
+      blip.dataset.originalFill = currentFill
     }
     blip.setAttribute('fill', 'black')
   }
@@ -115,14 +115,14 @@ function removeHoverStyling(svgDoc, id) {
   const { blip, legend } = findRadarEntryPair(svgDoc, id)
 
   if (blip) {
-    const originalFill = blip.getAttribute('data-original-fill')
+    const originalFill = blip.dataset.originalFill
     blip.removeAttribute('fill')
 
     if (originalFill) {
       blip.setAttribute('fill', originalFill)
     }
 
-    blip.removeAttribute('data-original-fill')
+    delete blip.dataset.originalFill
   }
 
   if (legend) {
