@@ -35,4 +35,14 @@ describe('#techRadarController', () => {
       expect(statusCode).toBe(statusCodes.ok)
     }
   )
+
+  test('Should display normal view when query string is empty', async () => {
+    const { result, statusCode } = await server.inject({
+      method: 'GET',
+      url: '/tech-radar'
+    })
+
+    expect(result).toEqual(expect.stringContaining('Tech Radar'))
+    expect(statusCode).toBe(statusCodes.ok)
+  })
 })

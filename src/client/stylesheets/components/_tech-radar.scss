@@ -46,16 +46,11 @@
   }
 }
 
-body:has(.radar-container-fullscreen) {
-  .govuk-back-link {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 10px 15px;
-    border-radius: 4px;
-  }
+.full-screen-back-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
 }
 
 section:has(.radar-container) {

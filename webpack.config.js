@@ -64,20 +64,20 @@ export default {
         loader: 'source-map-loader',
         enforce: 'pre'
       },
-      // {
-      //   test: /\.js$/,
-      //   loader: 'babel-loader',
-      //   exclude: /node_modules/,
-      //   options: {
-      //     browserslistEnv: 'javascripts',
-      //     cacheDirectory: true,
-      //     extends: path.join(dirname, 'babel.config.cjs'),
-      //     presets: [['@babel/preset-env']]
-      //   },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        options: {
+          browserslistEnv: 'javascripts',
+          cacheDirectory: true,
+          extends: path.join(dirname, 'babel.config.cjs'),
+          presets: [['@babel/preset-env']]
+        },
 
-      //   // Flag loaded modules as side effect free
-      //   sideEffects: false
-      // },
+        // Flag loaded modules as side effect free
+        sideEffects: false
+      },
       {
         test: /\.scss$/,
         type: ruleTypeAssetResource,
