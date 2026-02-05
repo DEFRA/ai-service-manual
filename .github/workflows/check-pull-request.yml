@@ -6,7 +6,6 @@ on:
       - main
     types:
       - opened
-      - edited
       - reopened
       - synchronize
       - ready_for_review
@@ -23,12 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+        uses: actions/checkout@v6
 
       - name: Test Docker Image Build
         run: |
           set +e
-          docker build --no-cache --tag cdp-python-backend-template .
+          docker build --no-cache --tag cdp-node-frontend-template .
           exit $?

@@ -27,9 +27,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
         with:
-          fetch-depth: 0
+          node-version: '22.x'
+
+      - name: Check lockfile is up to date
+        run: npm ci --omit=dev
 
       - name: Build and Publish
         uses: DEFRA/cdp-build-action/build@main
