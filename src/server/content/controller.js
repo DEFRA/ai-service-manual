@@ -8,6 +8,10 @@ const contentRoutes = {
   'case-studies/ipaffs-replatforming': 'ipaffs-replatforming.md',
   'case-studies/plp-cycle-time': 'plp-cycle-time.md',
   'case-studies/nrf-alpha': 'nrf-alpha.md',
+  'lessons-and-retrospectives/ai-code-quality': 'ai-code-quality.md',
+  'lessons-and-retrospectives/ai-governance-guidance':
+    'ai-governance-guidance.md',
+  'lessons-and-retrospectives/ai-output-validation': 'ai-output-validation.md',
   patterns: 'patterns.md',
   prototypes: 'prototypes.md',
   'ai-assistant': 'ai-assistant.md',
@@ -51,11 +55,16 @@ export const contentController = {
         }
       ]
 
-      if (category) {
-        breadcrumbs.push({
-          text: 'Case Studies',
-          href: '/case-studies'
-        })
+      const categoryBreadcrumbs = {
+        'case-studies': { text: 'Case Studies', href: '/case-studies' },
+        'lessons-and-retrospectives': {
+          text: 'Lessons & Retrospectives',
+          href: '/lessons-and-retrospectives'
+        }
+      }
+
+      if (categoryBreadcrumbs[category]) {
+        breadcrumbs.push(categoryBreadcrumbs[category])
       }
 
       breadcrumbs.push({
