@@ -4,6 +4,7 @@ import { home } from './home/index.js'
 import { about } from './about/index.js'
 import { content } from './content/index.js'
 import { caseStudies } from './case-studies/index.js'
+import { lessonsAndRetrospectives } from './lessons-and-retrospectives/index.js'
 import { proofsOfConcept } from './proofs-of-concept/index.js'
 import { techRadar } from './tech-radar/index.js'
 import { health } from './health/index.js'
@@ -23,6 +24,7 @@ export const router = {
         home,
         about,
         caseStudies,
+        lessonsAndRetrospectives,
         proofsOfConcept,
         techRadar,
         content
