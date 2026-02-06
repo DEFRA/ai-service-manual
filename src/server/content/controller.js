@@ -55,18 +55,16 @@ export const contentController = {
         }
       ]
 
-      if (category) {
-        if (category === 'case-studies') {
-          breadcrumbs.push({
-            text: 'Case Studies',
-            href: '/case-studies'
-          })
-        } else if (category === 'lessons-and-retrospectives') {
-          breadcrumbs.push({
-            text: 'Lessons & Retrospectives',
-            href: '/lessons-and-retrospectives'
-          })
+      const categoryBreadcrumbs = {
+        'case-studies': { text: 'Case Studies', href: '/case-studies' },
+        'lessons-and-retrospectives': {
+          text: 'Lessons & Retrospectives',
+          href: '/lessons-and-retrospectives'
         }
+      }
+
+      if (categoryBreadcrumbs[category]) {
+        breadcrumbs.push(categoryBreadcrumbs[category])
       }
 
       breadcrumbs.push({
