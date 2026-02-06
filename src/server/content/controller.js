@@ -3,6 +3,8 @@ import { markdown } from '../../config/nunjucks/filters/markdown.js'
 
 const contentRoutes = {
   'getting-started-with-ai': 'getting-started-with-ai.md',
+  'using-ai-effectively': 'using-ai-effectively.md',
+  'ai-learning-resources': 'ai-learning-resources.md',
   'tech-radar': 'tech-radar.md',
   'case-studies/nrf-discovery': 'nrf-discovery.md',
   'case-studies/ipaffs-replatforming': 'ipaffs-replatforming.md',
@@ -12,16 +14,12 @@ const contentRoutes = {
   'lessons-and-retrospectives/ai-governance-guidance':
     'ai-governance-guidance.md',
   'lessons-and-retrospectives/ai-output-validation': 'ai-output-validation.md',
-  patterns: 'patterns.md',
-  prototypes: 'prototypes.md',
   'ai-assistant': 'ai-assistant.md',
   'prompt-sharing': 'prompt-sharing.md',
   'lessons-and-retrospectives': 'lessons-and-retrospectives.md',
-  'links-to-cdp': 'links-to-cdp.md',
-  'green-summarisation': {
-    externalUrl:
-      'https://raw.githubusercontent.com/DEFRA/ai-spike-green-summarisation/refs/heads/main/README.md'
-  }
+  'green-summarisation': 'green-summarisation.md',
+  'agent-swarms': 'agent-swarms.md',
+  'token-optimisation': 'token-optimisation.md'
 }
 
 export const contentController = {

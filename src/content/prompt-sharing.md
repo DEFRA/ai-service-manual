@@ -15,6 +15,5 @@ If you would like to share feedback about what you want to see from prompt shari
 - [Getting Started with AI](/getting-started-with-ai)
 - [AI Assistant](/ai-assistant)
 - [Case Studies](/case-studies)
-- [Patterns](/patterns)
 
 [← Back to Home](/)
