@@ -18,7 +18,6 @@ These are real experiences from real teams. Some succeeded. Some failed. All lea
 
 - [Case Studies](/case-studies)
 - [Proofs of Concept (PoCs)](/proofs-of-concept)
-- [Patterns](/patterns)
 - [Tech Radar](/tech-radar)
 
 [← Back to Home](/)

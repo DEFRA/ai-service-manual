@@ -25,21 +25,10 @@ export const homeController = {
           href: '/case-studies'
         },
         {
-          title: 'Patterns',
-          description:
-            'Reusable design and implementation patterns for common AI use cases.',
-          href: '/patterns'
-        },
-        {
           title: 'Proofs of Concept (PoCs)',
           description:
             'Showcase of experimental AI work underway or completed by the AI Capabilities & Enablement team.',
           href: '/proofs-of-concept'
-        },
-        {
-          title: 'Prototypes',
-          description: 'Working prototypes teams can explore or test.',
-          href: '/prototypes'
         },
         {
           title: 'Prompt Sharing',
@@ -52,12 +41,6 @@ export const homeController = {
           description:
             "Transparent write-ups of what worked, what didn't, and why.",
           href: '/lessons-and-retrospectives'
-        },
-        {
-          title: 'Links to CDP',
-          description:
-            'Quick links to AI related tooling and components hosted by the Cloud Development Platform.',
-          href: '/links-to-cdp'
         }
       ],
       blogPosts: [

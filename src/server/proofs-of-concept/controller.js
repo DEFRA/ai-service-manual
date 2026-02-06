@@ -24,6 +24,18 @@ export const proofsOfConceptController = {
           description:
             'Creating lightweight / environmentally friendly text summaries.',
           href: '/green-summarisation'
+        },
+        {
+          title: 'Agent Swarms',
+          description:
+            'Multiple specialist AI agents working together to analyse policy documents.',
+          href: '/agent-swarms'
+        },
+        {
+          title: 'Token Optimisation',
+          description:
+            'Reducing LLM prompt sizes to cut costs and latency while preserving output quality.',
+          href: '/token-optimisation'
         }
       ]
     })

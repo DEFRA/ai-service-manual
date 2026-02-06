@@ -18,7 +18,5 @@ Content coming soon...
 
 - [Getting Started with AI](/getting-started-with-ai)
 - [Proofs of Concept (PoCs)](/proofs-of-concept)
-- [Prototypes](/prototypes)
-- [Patterns](/patterns)
 
 [← Back to Home](/)

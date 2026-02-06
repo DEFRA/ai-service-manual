@@ -1,36 +1,25 @@
 ---
-title: Getting Started with AI
+title: Getting started with AI
 ---
 
-## Coming soon
+## Before you start
 
-Step-by-step guides for using AI in your role at Defra.
+This site covers AI for digital delivery teams in Defra. It is written for the DDAT (Digital, Data and Technology) professions. The guidance here focuses on using AI effectively and safely within your role at Defra.
 
-## Get started now
+For wider guidance on AI policy and governance across the whole of Defra, visit the [AI Unit's page on SharePoint](https://defra.sharepoint.com/teams/Team4303/SitePages/Home.aspx).
 
-### Defra guidance
+## What you can find here
 
-- [AI playbook](https://defra.github.io/defra-ai-sdlc)
-- [Approved tools for AI pilot teams](https://defra.github.io/ai-sdlc-tool-guidance/)
+We are building a set of guides to help you use AI effectively and safely in your role. These guides cover practical topics and help you to write good prompts, choose the right model and understand how to stay safe when working with AI assistants.
 
-### Government guidance
+We are also adding role-specific onboarding guides for each DDAT profession in Defra. These are coming soon.
 
-- [UK Government AI Playbook](https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government)
+In the meantime, you can start with our introduction to using AI in digital delivery.
 
-### Learn about prompt engineering
+## Where to start
 
-- [Prompt Engineering Masterclass](https://www.youtube.com/watch?v=tBD2FtxNOEM) (video)
-- [Google: Intro to prompt engineering](https://cloud.google.com/discover/what-is-prompt-engineering?hl=en)
-- [Amazon: What is prompt engineering](https://aws.amazon.com/what-is/prompt-engineering/)
+The next page introduces 3 elements that affect the quality of your AI results. Understanding these makes a practical difference, regardless of which tools you use or what role you work in.
 
-### Learn about generative AI
-
-- [Microsoft: Generative AI for beginners](https://learn.microsoft.com/en-us/shows/generative-ai-for-beginners/)
-
-## Help shape these guides
-
-We need your input to create useful getting started guides.
-
-If you would like to help guide this work or share feedback, contact us at andrew.roberts@defra.com.
+[Start the guide](/using-ai-effectively)
 
 [← Back to Home](/)
