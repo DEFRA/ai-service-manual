@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ pageTitle }}</title>
+  <link href="{{ getAssetPath('stylesheets/application.scss') }}" rel="stylesheet">
+</head>
+<body>
+  <div class="govuk-width-container">
+    <a href="/tech-radar" class="govuk-back-link full-screen-back-link">Back</a>
+    
+    <main class="govuk-main-wrapper" id="main-content" role="main">
+      <div class="govuk-grid-row govuk-!-margin-top-3">
+        <div class="govuk-grid-column-full">
+          <div class="radar-container-fullscreen">
+            <object id="radar-object" type="image/svg+xml" data="{{ getAssetPath('aice-tech-radar.svg') }}">
+              <!-- Fallback for browsers that do not support SVG -->
+              <img src="{{ getAssetPath('aice-tech-radar.svg') }}" alt="Defra AI Capabilities and Enablement (AICE) Tech Radar">
+            </object>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <script type="module" src="{{ getAssetPath('radar.js') }}"></script>
+</body>
+</html>
