@@ -1,4 +1,0 @@
-# Useragent: Regular Expression Denial of Service (ReDoS)
-# Reason: Workaround (truncate user-agent strings) implemented in application code. Waiting for upstream package fix.
-# Created: 2025-11-26T15:00:00.000Z
-CVE-2020-26311 exp:2026-10-31

@@ -22,8 +22,7 @@ export default {
   entry: {
     application: {
       import: ['./javascripts/application.js', './stylesheets/application.scss']
-    },
-    radar: ['./javascripts/radar-enhancement.js']
+    }
   },
   experiments: {
     outputModule: true
@@ -126,13 +125,6 @@ export default {
         generator: {
           filename: 'assets/fonts/[name][ext]'
         }
-      },
-      {
-        test: /tech-radar\/.*/,
-        type: ruleTypeAssetResource,
-        generator: {
-          filename: 'assets/tech-radar/[name].[contenthash:7][ext]'
-        }
       }
     ]
   },
@@ -186,11 +178,6 @@ export default {
         {
           from: path.join(dirname, 'src/client/assets/images'),
           to: '.',
-          noErrorOnMissing: true
-        },
-        {
-          from: path.join(dirname, '.artifacts/tech-radar'),
-          to: '[name]-[contenthash:7][ext]',
           noErrorOnMissing: true
         }
       ]

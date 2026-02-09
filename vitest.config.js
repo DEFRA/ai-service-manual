@@ -18,8 +18,7 @@ export default defineConfig({
         'stylelint.config.js',
         'vitest.config.js',
         '.sonarlint',
-        'babel.config.cjs',
-        'src/client/**'
+        'babel.config.cjs'
       ]
     }
   }
