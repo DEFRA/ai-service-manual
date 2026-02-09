@@ -2,10 +2,7 @@ import neostandard from 'neostandard'
 
 export default neostandard({
   env: ['node', 'vitest'],
-  ignores: [
-    ...neostandard.resolveIgnoresFromGitignore(),
-    'radar-builder/lib/**'
-  ],
+  ignores: [...neostandard.resolveIgnoresFromGitignore()],
   noJsx: true,
   noStyle: true
 })

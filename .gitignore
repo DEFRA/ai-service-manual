@@ -2,7 +2,6 @@
 .npm/
 .vscode
 .idea
-.artifacts
 .public
 node_modules
 npm-debug.log

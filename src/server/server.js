@@ -14,7 +14,6 @@ import { sessionCache } from './common/helpers/session-cache/session-cache.js'
 import { getCacheEngine } from './common/helpers/session-cache/cache-engine.js'
 import { secureContext } from '@defra/hapi-secure-context'
 import { contentSecurityPolicy } from './common/helpers/content-security-policy.js'
-import { userAgentProtection } from './common/helpers/user-agent-protection.js'
 
 export async function createServer() {
   setupProxy()
@@ -38,7 +37,7 @@ export async function createServer() {
         },
         xss: 'enabled',
         noSniff: true,
-        xframe: 'sameorigin'
+        xframe: true
       }
     },
     router: {
@@ -54,9 +53,7 @@ export async function createServer() {
       strictHeader: false
     }
   })
-
   await server.register([
-    userAgentProtection, // needs to be registered before Scooter to intercept User-Agent header early
     requestLogger,
     requestTracing,
     secureContext,
@@ -65,7 +62,7 @@ export async function createServer() {
     nunjucksConfig,
     Scooter,
     contentSecurityPolicy,
-    router
+    router // Register all the controllers/routes defined in src/server/router.js
   ])
 
   server.ext('onPreResponse', catchAll)
