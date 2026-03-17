@@ -4,9 +4,9 @@ title: Links to CDP
 
 ## Getting support
 
-If you're getting started with integrating AI into your service, your first point of call is the ACE team.
+If you're getting started with integrating AI into your service, your first point of call is the AI Capabilities & Enablement team.
 
-Reach out for support in the #ask-ace channel on Defra Gray Slack.
+Reach out for support in the #ask-ace channel.
 
 ## CDP resources
 
@@ -22,7 +22,7 @@ This integration is growing and changing. Check the [CDP documentation](https://
 
 For support, reach out in:
 
-- #ask-ace on Defra Gray Slack
+- #ask-ace on Slack
 - CDP support channel
 
 [← Back to Home](/)

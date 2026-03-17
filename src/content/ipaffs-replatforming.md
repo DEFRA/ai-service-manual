@@ -8,7 +8,7 @@ A legacy service moved to new CDP cloud infrastructure. Completed in 25% of the 
 
 ## Overview
 
-The team replatformed a legacy service onto new cloud infrastructure. The work finished far faster than expected.
+The team re-platformed a legacy service onto new cloud infrastructure. The work finished far faster than expected.
 
 ## Key outcome
 

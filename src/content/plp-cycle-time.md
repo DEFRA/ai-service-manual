@@ -2,7 +2,7 @@
 title: PLP Cycle Time - GitHub Copilot Adoption
 ---
 
-# PLP Cycle Time
+# PLP cycle time
 
 A delivery team used GitHub Copilot between September and November 2025, measuring the impact on development speed and documentation quality. The team saw a 61% reduction in cycle time.
 
@@ -44,7 +44,7 @@ Copilot usage increased sharply after training sessions, showing developers unde
 
 ## Challenges and what the team learned
 
-Initial resistance came from concerns about code quality and whether AI was appropriate for government work. Training that explained how Copilot worked and what safeguards were in place helped address these concerns. Mixed engagement levels persisted throughout the trial. Developers who invested time in learning saw better results, but not everyone was willing to make that investment.
+Initial resistance came from concerns about code quality and whether AI was appropriate for government work. Training that explained how Copilot worked and what safeguards were in place helped address these concerns.
 
 Competing priorities deprioritised learning time. Delivery pressure meant developers focused on immediate tasks rather than experimenting with new tools. The team recognised that sustainable adoption required protected time for learning. Access to premium features was inconsistent across the team, creating frustration when some developers saw colleagues benefiting from features they could not access.
 

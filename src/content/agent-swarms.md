@@ -20,7 +20,7 @@ We built a managed swarm using Pydantic AI and Amazon Bedrock. An orchestrator d
 
 The orchestrator chose which agent to engage based on the discussion, not a fixed sequence. All agents shared the full conversation history, so each could reference and build on what others found.
 
-A human-in-the-loop step let reviewers approve the analysis or send it back for further work. Tool call limits prevented runaway execution.
+Adding a 'human-in-the-loop' step let reviewers approve the analysis or send it back for further work. Tool call limits prevented runaway execution.
 
 ## Limitations
 

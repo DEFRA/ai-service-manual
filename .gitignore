@@ -10,3 +10,10 @@ coverage
 .envrc
 tsconfig.tsbuildinfo
 .env
+
+# AI agent files — not shared with the team
+.agents
+CLAUDE.md
+AGENTS.md
+agent-logs/
+.claude/

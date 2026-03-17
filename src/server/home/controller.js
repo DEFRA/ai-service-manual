@@ -8,38 +8,36 @@ export const homeController = {
       heading: 'Home',
       cards: [
         {
-          title: 'Getting Started with AI',
+          title: 'Getting started with AI',
           description:
-            'Entry point for teams new to AI. Step-by-step guidance on how to begin using AI within your role.',
+            'Step-by-step guidance from the AI Capabilities & Enablement team on how to use AI in your role.',
           href: '/getting-started-with-ai'
         },
         {
-          title: 'Tech Radar',
+          title: 'Tech radar',
           description:
-            'Visual overview of AI technologies being evaluated, trialled, adopted or retired by the AI Capabilities & Enablement team.',
+            'A visual overview of the AI technologies being evaluated, trialled, adopted or retired by the AI Capabilities & Enablement team.',
           href: '/tech-radar'
         },
         {
-          title: 'Case Studies',
-          description: 'Real examples of impactful AI use within teams.',
+          title: 'Case studies',
+          description: 'Real examples of impactful AI use in Defra.',
           href: '/case-studies'
         },
         {
-          title: 'Proofs of Concept (PoCs)',
+          title: 'Proofs of concept (PoCs)',
           description:
             'Showcase of experimental AI work underway or completed by the AI Capabilities & Enablement team.',
           href: '/proofs-of-concept'
         },
         {
-          title: 'Prompt Sharing',
-          description:
-            'Curated library of effective prompts for common tasks, submitted by the AI community.',
+          title: 'Prompt library',
+          description: 'Effective prompts, submitted by the AI community.',
           href: '/prompt-sharing'
         },
         {
-          title: 'Lessons & Retrospectives',
-          description:
-            "Transparent write-ups of what worked, what didn't, and why.",
+          title: 'Lessons learnt',
+          description: "What worked, what didn't, and why.",
           href: '/lessons-and-retrospectives'
         }
       ],
@@ -76,28 +74,28 @@ export const homeController = {
       ],
       whatWeDo: [
         {
-          title: 'Supporting',
+          title: 'Support',
           description:
             'We help teams get started with AI safely and effectively, providing practical guidance and advice tailored to real needs.',
           image: '/public/supporting.png',
           imageAlt: ''
         },
         {
-          title: 'Enabling',
+          title: 'Enable',
           description:
             'We develop reusable patterns, tools and prototypes that make it easier for teams to adopt AI responsibly.',
           image: '/public/enabling.png',
           imageAlt: ''
         },
         {
-          title: 'Exploring',
+          title: 'Explore',
           description:
             'We research emerging AI technologies and test new ideas through proofs of concept, so teams can learn what works before committing.',
           image: '/public/exploring.png',
           imageAlt: ''
         },
         {
-          title: 'Learning',
+          title: 'Learn',
           description:
             'We document what we discover, successes and failures. Sharing lessons, case studies, and prompts openly across the department.',
           image: '/public/learning.png',

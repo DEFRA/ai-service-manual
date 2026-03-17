@@ -4,11 +4,11 @@ title: NRF Discovery - AI Powered Discovery
 
 # NRF Discovery
 
-A 12-week discovery completed in September 2025. The team used AI throughout and delivered comprehensive results with fewer people in the same timeframe.
+A 12-week discovery completed in September 2025. The team used AI throughout and delivered comprehensive results.
 
 ## Overview
 
-This discovery ran from July to September 2025 with a reduced team size compared to a standard government discovery project. The team made a deliberate decision to use AI tools extensively across the project, not just in isolated pockets of work. Despite operating with 36.5% fewer people than normal, the team delivered a complete discovery within the standard 12-week timeframe, producing all expected outputs to a high standard. This proved that AI could accelerate delivery work without compromising quality. The team's approach was pragmatic. They experimented with different tools for different tasks, learned what worked and what did not, and adjusted their methods throughout the project.
+This discovery ran from July to September 2025 with lean team size. The team made a deliberate decision to use AI tools extensively across the project, not just in isolated pockets of work. The team delivered a complete discovery within the standard 12-week timeframe, producing all expected outputs to a high standard. This proved that AI could accelerate delivery work without compromising quality. The team's approach was pragmatic. They experimented with different tools for different tasks, learned what worked and what did not, and adjusted their methods throughout the project.
 
 ## How AI supported the work
 
@@ -39,9 +39,9 @@ Code exploration helped the team understand unfamiliar codebases and technical s
 
 User research completion and synthesis took 56% less time than traditional methods. Insights reached decision-makers faster.
 
-### 36.5% smaller team delivered full outputs
+### A leaner team delivered full outputs
 
-The team operated with 36.5% fewer people while maintaining the same output quality. This efficiency came from AI handling time-consuming tasks like transcription, initial analysis, and document review.
+The team operated with a lean team size while maintaining the same output quality. This efficiency came from AI handling time-consuming tasks like transcription, initial analysis, and document review.
 
 ### Better collaboration across stakeholders
 
@@ -49,7 +49,7 @@ AI tools helped create clearer documentation and summaries. Better information s
 
 ### Quality matched standard discovery expectations
 
-The discovery received positive feedback at its assessment. The quality of outputs matched or exceeded expectations for a standard discovery, despite the smaller team.
+The discovery received positive feedback at its assessment. The quality of outputs matched or exceeded expectations for a standard discovery.
 
 ## Challenges and what the team learned
 

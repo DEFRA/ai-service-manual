@@ -16,7 +16,7 @@ This approach also gives us controls to monitor usage, apply guardrails and enfo
 
 ## What we found
 
-Getting this type of tool through governance is new ground for Defra. AI tools need access to large volumes of data, and that data is often sensitive. We cannot fully control what users input, so the service must assume that sensitive information could be submitted at any time. There is no fast-track process for obtaining the right data access permissions, such as a DPIA.
+Getting this type of tool through governance is new for Defra. AI tools need access to large volumes of data, and that data is often sensitive. We cannot fully control what users input, so the service must assume that sensitive information could be submitted at any time. There is no fast-track process for obtaining the right data access permissions, such as a DPIA.
 
 We are learning how to help Defra build systems that support this type of AI safely. We are also evaluating off-the-shelf alternatives such as Open WebUI to see whether existing tools can move us forward faster.
 

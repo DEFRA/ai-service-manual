@@ -2,13 +2,13 @@
 title: Clear Governance is Essential
 ---
 
-# Clear Governance is Essential
+# Clear governance is essential
 
-No single source of truth for what AI tools teams can use. The most diligent people restrict themselves while the least careful take the biggest risks.
+Having no single source of truth for what AI tools teams can use. The most diligent people restrict themselves while the least careful take the biggest risks.
 
 ## Overview
 
-All pilot teams needed to use data with AI tools. AI is useless without data. The model needs training data, and users need to provide data for tasks. Most people at Defra work with sensitive information. If your job does not involve sensitive data regularly, you are unusual. Almost everyone works on things that need to remain private to the organisation.
+All pilot teams needed to use data with AI tools. AI is useless without data. The model needs training data, and users need to provide data for tasks. Most people at Defra work with sensitive information.
 
 The AI landscape changes faster than any previous technology revolution. To use AI effectively, organisations need to adopt new tools as quickly as they emerge. Being 6 months behind was acceptable when the web was developing slowly. With AI, being 6 months behind means being completely left behind. Teams need to stay within 2 to 3 months of current tools to remain effective.
 
@@ -20,17 +20,15 @@ Pilot teams started raising questions about what they were allowed to do. They n
 
 They could not get clear answers. There was no single source of truth. Different teams received different guidance. Depending on who you asked, you might be told certain tools were restricted, or that other tools were not allowed at all. No individual, group, or department had the authority and accountability to say what was and was not allowed.
 
-AI functionality was being enabled across many unavoidable tools. Confluence and Jira already had AI features embedded. Video conferencing tools included AI assistance. Surveys showed many people at Defra were using ChatGPT.
+AI functionality was being enabled across many unavoidable tools. Confluence and Jira already had AI features embedded. Video conferencing tools included AI assistance.
 
 ## What happened
 
-The lack of clear rules created a culture that normalized shadow IT practices. The rules were neither lenient nor restrictive. They were simply not available. Every individual had to make their own judgment about what was acceptable.
+A lack of clear rules meant every individual had to make their own judgment about what was acceptable. This had two outcomes.
 
-Even with clear rules, some people would breach them. Without clear rules, it became a nightmare. The least diligent people put very sensitive data into tools without considering whether they were breaching policy. Their minds did not go there.
+The most diligent people who could genuinely make a difference with AI were nervous. They did not want to get in trouble or be blamed for doing the wrong thing. So they were too hesitant to use the tools.
 
-The most diligent people who could genuinely make a difference with AI were nervous. They did not want to get in trouble or be blamed for doing the wrong thing. They erred on the side of caution.
-
-This created the worst possible outcome. The least valuable people were doing the most risky things. The most trustworthy people were holding back.
+Less diligent people were confident using AI tools, but in the worst case scenario, these people could end up putting sensitive data into AI tools without considering the risk.
 
 ## What the team learned
 

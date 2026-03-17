@@ -16,23 +16,23 @@ export const proofsOfConceptController = {
         {
           title: 'AI Assistant',
           description:
-            'Live AI assistant for teams to experiment with advanced AI techniques safely and securely.',
+            'Live AI assistant so teams can experiment with advanced AI techniques safely and securely.',
           href: '/ai-assistant'
         },
         {
-          title: 'Green Summarisation',
+          title: 'Green summarisation',
           description:
-            'Creating lightweight / environmentally friendly text summaries.',
+            'Creating lightweight and environmentally friendly text summaries.',
           href: '/green-summarisation'
         },
         {
-          title: 'Agent Swarms',
+          title: 'Agent swarms',
           description:
             'Multiple specialist AI agents working together to analyse policy documents.',
           href: '/agent-swarms'
         },
         {
-          title: 'Token Optimisation',
+          title: 'Token optimisation',
           description:
             'Reducing LLM prompt sizes to cut costs and latency while preserving output quality.',
           href: '/token-optimisation'

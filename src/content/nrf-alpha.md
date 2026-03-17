@@ -4,11 +4,11 @@ title: NRF Alpha - AI Powered Alpha
 
 # NRF Alpha
 
-Completed in January 2026. The team moved from a successful AI-enabled discovery into alpha, carrying forward their experience and confidence with AI tools. They received the best service standards review ever recorded for a Defra alpha project.
+Completed in January 2026. The team moved from a successful AI-enabled Discovery phase into an Alpha phase, carrying forward their experience and confidence with AI tools. They received one of the best service standards assessments ever recorded for a Defra Alpha project.
 
 ## Overview
 
-The NRF Alpha project ran from October 2025 to January 2026, following directly from the team's AI-enabled discovery phase. This continuity was significant. The team did not need to learn how to use AI tools from scratch. They already understood what worked, what did not, and where the limitations lay. This experience translated into exceptional delivery quality. At the alpha assessment, the team received the highest service standards score ever recorded for a Defra alpha project. The team's approach to AI matured during alpha. By this phase, they knew which tools to use for specific tasks, how to write effective prompts, and when human judgement was essential. They built their own prompt library, sharing successful prompts across the team and refining them over time.
+The NRF Alpha phase ran from October 2025 to January 2026, following directly from the team's AI-enabled discovery phase. This continuity was significant. The team did not need to learn how to use AI tools from scratch. They already understood what worked, what did not, and where the limitations lay. This experience translated into exceptional delivery quality. At the Alpha assessment, the team received one of the highest service standards score ever recorded for a Defra Alpha project. The team's approach to AI matured during alpha. By this phase, they knew which tools to use for specific tasks, how to write effective prompts, and when human judgement was essential. They built their own prompt library, sharing successful prompts across the team and refining them over time.
 
 ## How AI supported the work
 
@@ -18,7 +18,7 @@ Research synthesis condensed findings and documentation, extracting key insights
 
 Document analysis became routine. The team used AI to review existing documentation, extract relevant sections, and identify inconsistencies, particularly when understanding legacy systems.
 
-Prototyping accelerated significantly. The team built working prototypes quickly to test with users, allowing more iteration within the same timeframe.
+Prototyping accelerated significantly. The team built working prototypes using AI to quickly to test with users, allowing more iteration within the same timeframe.
 
 Code exploration helped understand existing codebases, identify integration points, and evaluate technical approaches as the team built out the alpha service.
 
@@ -38,7 +38,7 @@ Prompt library development became one of the team's most significant innovations
 
 ### Highest service standards assessment in Defra history
 
-The team received the highest service standards score ever recorded for a Defra alpha project. Assessors commented on research quality, clarity of design decisions, thoroughness of technical exploration, and the team's ability to articulate their approach.
+The team received one of the highest ever service standard assessment scores ever recorded for a Defra Alpha project. Assessors commented on research quality, clarity of design decisions, thoroughness of technical exploration, and the team's ability to articulate their approach.
 
 ### Comprehensive prompt library built and shared
 
