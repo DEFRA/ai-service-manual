@@ -179,6 +179,11 @@ export default {
           from: path.join(dirname, 'src/client/assets/images'),
           to: '.',
           noErrorOnMissing: true
+        },
+        {
+          from: path.join(dirname, 'src/client/assets/images'),
+          to: 'assets/images',
+          noErrorOnMissing: true
         }
       ]
     })
