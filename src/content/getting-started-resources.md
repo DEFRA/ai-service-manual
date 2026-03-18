@@ -2,7 +2,7 @@
 title: Getting started resources
 ---
 
-If you're just getting started with AI, you're in the right place. This page brings together the most useful resources to help you begin safely and confidently. If you ever get stuck or have a question, the team is on the **Ask Ace** channel in Slack and happy to help.
+If you're just getting started with AI, you're in the right place. This page brings together the most useful resources to help you begin safely and confidently. If you ever get stuck or have a question, the team is on the **#ask-ace** channel in Slack and happy to help.
 
 ## Start here — using AI safely at Defra
 
@@ -40,4 +40,4 @@ For more advanced AI patterns in use at Defra, see our [prompt library](/prompt-
 
 ---
 
-If you need support understanding any of these tools, or how to apply them within your project, reach out to us on the **Ask Ace** channel in Slack.
+If you need support understanding any of these tools, or how to apply them within your project, reach out to us on the **#ask-ace** channel in Slack.
