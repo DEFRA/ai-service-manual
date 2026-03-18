@@ -4,17 +4,15 @@ import { markdown } from '../../config/nunjucks/filters/markdown.js'
 const contentRoutes = {
   'getting-started-resources': 'getting-started-resources.md',
   'tech-radar': 'tech-radar.md',
-  'case-studies/nrf-discovery': 'nrf-discovery.md',
-  'case-studies/ipaffs-replatforming': 'ipaffs-replatforming.md',
-  'case-studies/plp-cycle-time': 'plp-cycle-time.md',
-  'case-studies/nrf-alpha': 'nrf-alpha.md',
-  'lessons-and-retrospectives/ai-code-quality': 'ai-code-quality.md',
-  'lessons-and-retrospectives/ai-governance-guidance':
-    'ai-governance-guidance.md',
-  'lessons-and-retrospectives/ai-output-validation': 'ai-output-validation.md',
+  'blogs/nrf-discovery': 'nrf-discovery.md',
+  'blogs/ipaffs-replatforming': 'ipaffs-replatforming.md',
+  'blogs/plp-cycle-time': 'plp-cycle-time.md',
+  'blogs/nrf-alpha': 'nrf-alpha.md',
+  'blogs/ai-code-quality': 'ai-code-quality.md',
+  'blogs/ai-governance-guidance': 'ai-governance-guidance.md',
+  'blogs/ai-output-validation': 'ai-output-validation.md',
   'ai-assistant': 'ai-assistant.md',
   'prompt-sharing': 'prompt-sharing.md',
-  'lessons-and-retrospectives': 'lessons-and-retrospectives.md',
   'green-summarisation': 'green-summarisation.md',
   'agent-swarms': 'agent-swarms.md',
   'token-optimisation': 'token-optimisation.md'
@@ -52,11 +50,7 @@ export const contentController = {
       ]
 
       const categoryBreadcrumbs = {
-        'case-studies': { text: 'Case Studies', href: '/case-studies' },
-        'lessons-and-retrospectives': {
-          text: 'Lessons & Retrospectives',
-          href: '/lessons-and-retrospectives'
-        }
+        blogs: { text: 'Blogs', href: '/blogs' }
       }
 
       if (categoryBreadcrumbs[category]) {

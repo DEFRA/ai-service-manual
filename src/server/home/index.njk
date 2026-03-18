@@ -35,30 +35,6 @@
       </ul>
     </section>
 
-    {% if blogPosts.length > 0 %}
-      <section class="defra-section" aria-labelledby="blog-heading">
-        <h2 class="govuk-heading-l" id="blog-heading">Latest blog posts</h2>
-        <div class="govuk-grid-row">
-          {% for post in blogPosts %}
-            <div class="govuk-grid-column-one-third govuk-!-margin-top-4">
-              {% if post.image %}
-                <div class="app-blog-image">
-                  <img src="{{ post.image }}" alt="{{ post.imageAlt }}" loading="lazy">
-                </div>
-              {% endif %}
-              <p class="govuk-body-s govuk-!-margin-top-3 govuk-!-margin-bottom-1 app-blog-date">
-                {{ post.date }}
-              </p>
-              <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
-                <a class="govuk-link" href="{{ post.href }}">{{ post.title }}</a>
-              </h3>
-              <p class="govuk-body govuk-!-margin-bottom-1">{{ post.description }}</p>
-            </div>
-          {% endfor %}
-        </div>
-      </section>
-    {% endif %}
-
     {% if whatWeDo.length > 0 %}
       <section class="defra-section" aria-labelledby="what-we-do-heading">
         <h2 class="govuk-heading-l" id="what-we-do-heading">What we do</h2>
