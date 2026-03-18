@@ -11,7 +11,7 @@ export const homeController = {
           title: 'Getting started with AI',
           description:
             'Step-by-step guidance from the AI Capabilities & Enablement team on how to use AI in your role.',
-          href: '/getting-started-with-ai'
+          href: '/getting-started-resources'
         },
         {
           title: 'Tech radar',

@@ -14,10 +14,10 @@ Add a new one-pager at `/getting-started-resources` — a warm, friendly signpos
 
 ## URL and routing
 
-| Property | Value |
-|---|---|
-| URL slug | `/getting-started-resources` |
-| Page title | `Getting started resources` |
+| Property         | Value                                                      |
+| ---------------- | ---------------------------------------------------------- |
+| URL slug         | `/getting-started-resources`                               |
+| Page title       | `Getting started resources`                                |
 | Breadcrumb trail | Home › Getting started with AI › Getting started resources |
 
 Add to `contentRoutes` in `src/server/content/controller.js`:
@@ -45,6 +45,7 @@ Example opening:
 The most important message on the page. New starters must understand safe and responsible AI use before anything else.
 
 Content:
+
 - One sentence framing: the most important thing when using AI at Defra is doing so safely and securely.
 - Signpost to the **Civil Service learning courses** via the Defra AI unit SharePoint as the right starting point.
 - Signpost to the **AI Governance page** for understanding policy.
@@ -64,6 +65,7 @@ Links:
 Visual separator before this section (horizontal rule or `<hr>`) to signal a change of focus.
 
 Content:
+
 - One sentence framing: the ACE team maintains a curated list of the tools found most effective.
 - Link to the **Tools Radar** on this service manual.
 
@@ -80,19 +82,20 @@ Short intro sentence: "For up-to-date getting started guides from the main AI pr
 
 One link per provider, in this order: **Microsoft, Claude (Anthropic), AWS, Google, OpenAI**. Each link is presented as a short list item with a one-sentence description — no deep detail needed.
 
-| Provider | Link text | URL | One-line description |
-|---|---|---|---|
-| Microsoft | Microsoft Copilot learning hub | `https://learn.microsoft.com/en-us/copilot/` | Central home for all Copilot training, organised by product. |
-| Claude (Anthropic) | Getting started with Claude | `https://support.claude.com/en/articles/8114491-getting-started-with-claude` | How to use Claude's chat interface, with tips for better results. |
-| AWS | AWS AI training | `https://aws.amazon.com/training/learn-about/ai/` | Free courses covering AI fundamentals, for all roles and levels. |
-| Google | Gemini Prompt Guide for Google Workspace | `https://workspace.google.com/learning/content/gemini-prompt-guide` | Role-based prompting guide with concrete examples for everyday tasks. |
-| OpenAI | OpenAI Academy content hub | `https://academy.openai.com/public/content` | Videos, articles, and prompt packs organised by role and use case. |
+| Provider           | Link text                                | URL                                                                          | One-line description                                                  |
+| ------------------ | ---------------------------------------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| Microsoft          | Microsoft Copilot learning hub           | `https://learn.microsoft.com/en-us/copilot/`                                 | Central home for all Copilot training, organised by product.          |
+| Claude (Anthropic) | Getting started with Claude              | `https://support.claude.com/en/articles/8114491-getting-started-with-claude` | How to use Claude's chat interface, with tips for better results.     |
+| AWS                | AWS AI training                          | `https://aws.amazon.com/training/learn-about/ai/`                            | Free courses covering AI fundamentals, for all roles and levels.      |
+| Google             | Gemini Prompt Guide for Google Workspace | `https://workspace.google.com/learning/content/gemini-prompt-guide`          | Role-based prompting guide with concrete examples for everyday tasks. |
+| OpenAI             | OpenAI Academy content hub               | `https://academy.openai.com/public/content`                                  | Videos, articles, and prompt packs organised by role and use case.    |
 
 ---
 
 ### 5. Section: Advanced AI patterns at Defra
 
 Content:
+
 - One sentence: for more advanced AI patterns in use at Defra, see:
   - **Prompt library** → `/prompt-sharing`
   - **Proof of Concepts** → `/proofs-of-concept`

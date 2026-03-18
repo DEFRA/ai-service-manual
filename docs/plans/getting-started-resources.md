@@ -65,12 +65,12 @@ Change the Tools Radar URL in the spec table from `/tools-radar` to `/tech-radar
 
 ## Files changed
 
-| Action | File |
-|---|---|
+| Action | File                                       |
+| ------ | ------------------------------------------ |
 | Create | `src/content/getting-started-resources.md` |
-| Edit | `src/server/content/controller.js` |
-| Edit | `src/content/getting-started-with-ai.md` |
-| Edit | `docs/specs/getting-started-resources.md` |
+| Edit   | `src/server/content/controller.js`         |
+| Edit   | `src/content/getting-started-with-ai.md`   |
+| Edit   | `docs/specs/getting-started-resources.md`  |
 
 ---
 
