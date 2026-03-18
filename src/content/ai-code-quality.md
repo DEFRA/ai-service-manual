@@ -2,9 +2,9 @@
 title: AI-Generated Code Quality
 ---
 
-# AI-Generated Code Quality
+# AI-generated code quality
 
-Polished code that passed senior reviews became impossible to maintain. Two developers using AI created thousands of lines that could not be fixed or extended.
+Polished code that had passed senior reviews became impossible to maintain. Two developers using AI created thousands of lines that could not be fixed or extended.
 
 ## Overview
 
@@ -40,7 +40,7 @@ The engineers writing the code should have been the human in the loop. They need
 
 AI can spot this kind of mess. The team introduced AI code reviews as part of their standard process. AI proved good at identifying tangled code patterns that human reviewers missed.
 
-Onboarding materials were changed. The team stopped encouraging mid-to-junior engineers to use AI heavily for code generation. Training now emphasizes the risks rather than showing impressive demos. The message changed from "revolutionize your workflow" to "understand what you are generating".
+Onboarding materials were changed. The team stopped encouraging mid-to-junior engineers to use AI heavily for code generation. Training now emphasises the risks rather than showing impressive demos. The message changed from "revolutionise your workflow" to "understand what you are generating".
 
 ## Related pages
 

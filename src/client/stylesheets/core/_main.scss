@@ -1,9 +1,12 @@
 @use 'govuk-frontend' as *;
 
-// Example namespaced custom element style CSS classes
-
 .app-main-wrapper {
   display: block;
-  padding-top: govuk-spacing(4);
-  padding-bottom: govuk-spacing(3);
+  padding-top: govuk-spacing(6);
+  padding-bottom: govuk-spacing(9);
+}
+
+// Hero pages manage their own top spacing via the defra-hero component
+.app-main-wrapper--hero {
+  padding-top: 0;
 }

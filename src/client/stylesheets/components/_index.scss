@@ -1,4 +1,14 @@
-// import custom component styles
+// Server-side component styles
 @use 'heading/heading';
-@use 'card';
 
+// Defra custom component styles
+@use 'defra-header';
+@use 'defra-service-navigation';
+@use 'defra-hero';
+@use 'defra-tile';
+@use 'defra-section';
+@use 'defra-footer';
+
+// Page-specific component styles
+@use 'card';
+@use 'prose';

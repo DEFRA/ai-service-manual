@@ -22,8 +22,7 @@ Detailed, structured prompts with lots of context consistently outperform shorte
 
 ## Capable model
 
-All models are not equal. Two products using the same underlying model can produce different results depending on how the provider has configured it. The free Microsoft Copilot Chat, for example, does not perform with the same quality as the paid Microsoft 365 Copilot, even though they share the same name.
-©†
+All models are not equal. Two products using the same underlying model can produce different results depending on how the provider has configured it.
 Choose the right model for the task. Advanced reasoning models produce higher quality output but use significantly more energy. If a lighter model can do the job, use it.
 
 [Continue to learning resources](/ai-learning-resources)

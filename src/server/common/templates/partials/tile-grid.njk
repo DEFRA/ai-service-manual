@@ -1,37 +1,35 @@
 {%- macro tileGrid(items, heading, description) -%}
-  <section class="app-hero-section govuk-!-padding-top-9 govuk-!-padding-bottom-7">
-    <div class="govuk-width-container">
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-three-quarters">
-          <h1 class="govuk-heading-xl govuk-!-font-size-64 govuk-!-margin-top-5 app-hero-title">
-            {{ heading }}
-          </h1>
-          <p class="govuk-body-l">
-            {{ description }}
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="govuk-!-margin-bottom-0">
+  <div class="defra-hero">
     <div class="govuk-width-container">
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-full">
-          <div class="dfe-grid-container">
-            {% for item in items %}
-              <a href="{{ item.href }}" class="dfe-card">
-                <div class="dfe-card-container">
-                  <h3 class="govuk-heading-m">
-                    <span class="govuk-link govuk-link--no-visited-state dfe-card-link--header">{{ item.title }}</span>
-                  </h3>
-                  <p class="govuk-body">{{ item.description }}</p>
-                </div>
-              </a>
-            {% endfor %}
-          </div>
+        <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-xl govuk-!-margin-top-4">{{ heading }}</h1>
+          <p class="govuk-body-l">{{ description }}</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+
+  <div class="govuk-width-container">
+    <section class="defra-section">
+      {% if items.length %}
+        <ul class="defra-tile-grid">
+          {% for item in items %}
+            <li>
+              <div class="defra-tile">
+                <h3 class="govuk-heading-m defra-tile__title">
+                  <a class="defra-tile__link" href="{{ item.href }}">{{ item.title }}</a>
+                </h3>
+                <p class="govuk-body defra-tile__body">{{ item.description }}</p>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="govuk-body">There are no entries yet. Check back soon.</p>
+      {% endif %}
+    </section>
+  </div>
+
 {%- endmacro -%}

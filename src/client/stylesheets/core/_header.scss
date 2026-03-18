@@ -1,7 +1,2 @@
-@use 'variables/colours' as *;
-
-// Example namespaced custom element style CSS classes
-
-.app-header {
-  border-bottom-color: $app-light-grey;
-}
+// GOV.UK header is replaced by .defra-header in the page layout.
+// This file is kept for potential future overrides.

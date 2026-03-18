@@ -2,13 +2,13 @@
 title: Prompt Sharing
 ---
 
-Curated library of effective prompts for common Defra tasks, submitted by the Defra AI community.
+Library of prompts for common Defra tasks, submitted by the Defra AI community.
 
 ## Overview
 
 The prompt library is launching soon.
 
-If you would like to share feedback about what you want to see from prompt sharing, contact us at andrew.roberts@defra.com.
+If you would like to share feedback about what you want to see, contact us at xxxxx@xxxxxx.gov.uk.
 
 ## Related Pages
 

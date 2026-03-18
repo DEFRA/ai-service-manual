@@ -9,7 +9,7 @@ export const caseStudiesController = {
       pageTitle: 'Case Studies',
       heading: 'Case Studies',
       description:
-        'Real examples of AI use across Defra. From small experiments to large transformations. This is where you see what is actually happening across the department.',
+        'How AI is currently being used across Defra, from small experiments to large transformations.',
       viewName: 'case-studies/index',
       itemsKey: 'caseStudies',
       items: [
@@ -20,7 +20,7 @@ export const caseStudiesController = {
           href: '/case-studies/nrf-discovery'
         },
         {
-          title: 'IPAFFS Replatforming',
+          title: 'IPAFFS re-platforming',
           description:
             '75% faster migration. Legacy service moved to new CDP cloud infrastructure in a quarter of the estimated time.',
           href: '/case-studies/ipaffs-replatforming'
@@ -34,7 +34,7 @@ export const caseStudiesController = {
         {
           title: 'NRF Alpha',
           description:
-            'Best service standards review in Defra history. A team with AI experience moved from discovery to alpha with exceptional results.',
+            'One of the best service standard assessments in Defra history. A team with AI experience moved from discovery to alpha with exceptional results.',
           href: '/case-studies/nrf-alpha'
         }
       ]

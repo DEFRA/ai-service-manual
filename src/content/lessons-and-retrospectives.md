@@ -2,17 +2,15 @@
 title: Lessons & Retrospectives
 ---
 
-# Lessons & Retrospectives
+# Lessons learnt
 
-Transparent write-ups of what worked, what didn't, and why.
+What worked, what didn't, and why. Real experiences from the AI pilot scheme.
 
 ## Overview
 
-The AI pilot scheme started at Defra in March 2025. Around 20 pilot teams participated, totaling approximately 200 individuals. People were represented from right across the DDTS professions.
+The AI pilot scheme started at Defra in March 2025. Around 20 pilot teams participated, approximately 200 individuals. People were represented across all the DDTS professions.
 
-Through the pilot scheme, teams learned lessons along the way. This section brings those lessons to life as individual reports. Each lesson states what went wrong plainly, then explains what was learned and what actions were taken.
-
-These are real experiences from real teams. Some succeeded. Some failed. All learned something worth sharing.
+During the pilot scheme, teams learned lessons along the way. These are real experiences from real teams. Some succeeded. Some failed. All teams learned something worth sharing.
 
 ## Related Pages
 

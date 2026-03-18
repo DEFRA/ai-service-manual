@@ -1,13 +1,15 @@
 {% extends 'layouts/page.njk' %}
 
 {% block content %}
-  {{ appHeading({
-    text: heading
-  }) }}
+  <div class="govuk-width-container">
+    {{ appHeading({
+      text: heading
+    }) }}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <p>{{ message }}</p>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body">{{ message }}</p>
+      </div>
     </div>
   </div>
 {% endblock %}
