@@ -22,4 +22,6 @@ The next page introduces 3 elements that affect the quality of your AI results. 
 
 [Start the guide](/using-ai-effectively)
 
+You can also browse our [getting started resources](/getting-started-resources) — a curated list of external learning materials and Defra-specific guidance.
+
 [← Back to Home](/)

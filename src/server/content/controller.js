@@ -3,6 +3,7 @@ import { markdown } from '../../config/nunjucks/filters/markdown.js'
 
 const contentRoutes = {
   'getting-started-with-ai': 'getting-started-with-ai.md',
+  'getting-started-resources': 'getting-started-resources.md',
   'using-ai-effectively': 'using-ai-effectively.md',
   'ai-learning-resources': 'ai-learning-resources.md',
   'tech-radar': 'tech-radar.md',
